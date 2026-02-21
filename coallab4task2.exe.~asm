@@ -1,0 +1,25 @@
+
+; You may customize this and other start-up templates;
+; The location of this template is c:\emu8086\inc\0_com_template.txt
+
+
+
+.model small
+.stack 100h
+.data
+msg db "Maria - SAP ID: 68647$"
+
+.code
+main proc
+mov ax, @data
+mov ds, ax
+
+mov dx, offset msg
+mov ah, 09h        ; Display string
+int 21h
+
+mov ah, 4ch        ; Exit program
+int 21h
+main endp
+end main
+
