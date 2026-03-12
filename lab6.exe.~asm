@@ -1,0 +1,39 @@
+
+; You may customize this and other start-up templates;
+; The location of this template is c:\emu8086\inc\0_com_template.txt
+
+
+.model small
+.stack 100h
+.data
+msg1 db 'Full Name: Maria $'
+msg2 db 0Dh,0Ah,'SAP Id:68647 $'
+msg3 db 0Dh,0Ah,'Batch:2025 $'
+msg4 db 0Dh,0Ah,'Program : BS Software  Engineering           Semester:3  $'
+
+.code
+main proc
+mov ax,@data
+mov ds,ax
+
+mov ah,09h
+lea dx,msg1
+int 21h
+
+mov ah,09h
+lea dx,msg2
+int 21h
+
+mov ah,09h
+lea dx,msg3
+int 21h
+
+mov ah,09h
+lea dx,msg4
+int 21h
+
+mov ah,4Ch
+int 21h
+main endp
+end main
+
