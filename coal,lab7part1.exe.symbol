@@ -1,0 +1,16 @@
+< THE SYMBOL TABLE >  coal,lab7part1.exe  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+STACK                    	00000     	-5        	SEGMENT   	(ITSELF)  
+DATA                     	00010     	-5        	SEGMENT   	(ITSELF)  
+MSGQ                     	00000     	1         	VAR       	data      
+MSGR                     	0000C     	1         	VAR       	data      
+QUOT                     	00019     	1         	VAR       	data      
+REM                      	0001A     	1         	VAR       	data      
+CODE                     	00012     	-5        	SEGMENT   	(ITSELF)  
+MAIN                     	00000     	-1        	NEAR      	code      
+===================================================================================================
+[ 3/13/2026  --  11:30:54 PM ] 
+< END >
+ 
